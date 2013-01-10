@@ -23,7 +23,7 @@ $ModLoad omhiredis.so # provides redis output
 $template TestRedis, "hincrby progcount %programname% 1"
 
 if $msg then {
-    action(type="omhiredis", template="TestRedis")
+    action(type="omhiredis" template="TestRedis")
 }
 ---------------------------------------------------------------------------------------------
 
